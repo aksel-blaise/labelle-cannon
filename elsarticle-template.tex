@@ -12,7 +12,7 @@
 \usepackage{lineno,hyperref}
 \modulolinenumbers[5]
 
-\journal{BTAS}
+\journal{L'Anthropologie}
 
 %%%%%%%%%%%%%%%%%%%%%%%
 %% Elsevier bibliography styles
@@ -61,7 +61,7 @@
 
 \begin{abstract}
 %% Text of abstract 
-The goal of this exploratory research design was to scan and reverse engineer one of three bronze cannons (41MG86 - 11900-1), recovered from the La Belle (shipwreck) excavation, that is currently on exhibit at the Bullock Texas State History Museum in Austin, Texas. A freeform computer aided design (CAD) model was designed based upon the 3D mesh in Geomagic Design X with a desired maximum deviation of 0.1 mm between the model and the mesh. Deviations were calculated in Geomagic Control X using the surface model as the reference data, and the mesh as the measured data. A custom patch network was then designed through a series of iterative revisions until the whole of the surface model met with the specified tolerance. The 3D surface model of the cannon will be replicated in a variety of media at variable scales for use in exhibits and for educational and promotional material for the Texas Historical Commission, the Republic of France, and their partner museums.
+The goal of this project was to scan and reverse engineer one of three bronze cannons (41MG86 - 11900-1) that was recovered from the La Belle (shipwreck) excavation, which is currently on exhibit at the Bullock Texas State History Museum in Austin, Texas. A freeform computer aided design (CAD) model was generated based upon the topology of the 3D mesh in Geomagic Design X with a desired maximum deviation of 0.1 mm between the model and the mesh. Deviations were calculated in Geomagic Control X using the surface model as the reference data, and the mesh as the measured data. A custom patch network was subsequently designed using a series of iterative revisions until the whole of the surface model met with the specified tolerance. The 3D surface model of the cannon will be replicated in a variety of media at variable scales for use in exhibits and for educational and promotional material for the Texas Historical Commission, the Republic of France, and their partner museums.
 \end{abstract}
 
 \begin{keyword}
@@ -81,9 +81,9 @@ Reverse-Engineering \sep 3D Scan-to-CAD \sep La Belle \sep Cannon
 
 Three bronze cannons raised from the hull of French explorer Rene Cavalier La Sieur de La Salle's lost ship La Belle in Matagorda Bay, Texas, are among the most celebrated and iconic of the nearly two million artifacts excavated from the CE 1686 wreck site by the Texas Historical Commission (THC) \citep{RN5767}. The first was raised in the summer of 1995 after testing a magnetic anomaly detected by State Marine Archeologist J. Barto Arnold in the vicinity of La Belle's last recorded location, where the remains of a 17\textsuperscript{th} or 18\textsuperscript{th} century wooden-hulled vessel \citep{RN5766,RN5765} was found. It was recognized that the cannon might aid in the identification of the wreck, and it was sent to Dr. Donald H. Keith at the Ships of Discovery Conservation Laboratory at the Corpus Christi Museum of Science and History for cleaning and conservation.
 
-Cleaning and conservation revealed an ornately decorated bronze (four-pound) cannon likely corresponding to one of the four granted to La Salle by the King for field artillery \citep{RN5763,RN5764}. Stylized acanthus leaves decorate the base, mid-section, and muzzle of each, and the lifting handles atop the cannon are fashioned as toothy dolphins. A stylized monogram of French King Louis XIV is prominently displayed on the breech below, where a series of inscriptions on the base ring of the cannon read \textit{N\textsuperscript{o} 4} and \textit{no  741}. The chase of the barrel bears the armorial device of Louis Alexandre de Bourbon, le Comte de Vermandois, the third child from Louis XIV's affair with the Duchess of Valiere, who in CE 1669 was appointed the Grand Admiral of France at the age of 2, and served until his death in CE 1683 \citep[354]{RN5763}. During this period, the bronze cannons produced in royal foundries displayed a version of his armorial device, a practice that aided in refining the period during the reign of Louis XIV when the cannon was cast. This predates La Salle's expedition--which set sail in the summer of CE 1684--and the presence of the cannon helped to verify that the shipwreck was indeed the La Belle.
+Cleaning and conservation revealed an ornately decorated bronze (four-pound) cannon likely corresponding to one of the four granted to La Salle by the King for field artillery \citep{RN5763,RN5764}. Stylized acanthus leaves decorate the base, mid-section, and muzzle of each, and the lifting handles atop the cannon are fashioned as toothy dolphins. A stylized monogram of French King Louis XIV is prominently displayed on the breech below, where a series of inscriptions on the base ring of the cannon read \textit{N\textsuperscript{o} 4} and \textit{no  741}. The chase of the barrel bears the armorial device of Louis Alexandre de Bourbon, le Comte de Vermandois, the third child from Louis XIV's affair with the Duchess of Valiere, who in CE 1669 was appointed the Grand Admiral of France at the age of 2, and served until his death in CE 1683 \citep[354]{RN5763}. During this period, the bronze cannons produced in royal foundries displayed a version of his armorial device, a practice that aided in refining the period during the reign of Louis XIV when the cannon was cast. This predates La Salle's expedition, which set sail in the summer of CE 1684, and the presence of the cannon aided in verifying that the shipwreck was indeed the La Belle.
 
-In 1997-1998 the remainder of the vessel was excavated by the THC under the direction of Dr. James E. Bruseth. During that excavation, two additional bronze cannons--nearly identical to the first--were uncovered in the bottom of the hull (Figure ~\ref{fig:FigExcavate}) \citep{RN5763,RN5762,RN5761}. The cannon selected for 3D scanning, and described herein, was one of two that were recovered \textit{in-situ}, atop the ballast and beneath the cargo of the main hold. A fourth cannon was identified as having been a part of the La Belle cargo, but it had previously been removed by an unknown party, leaving behind only its' impression in the sea floor \citep{RN5763}. 
+In 1997-1998 the remainder of the vessel was excavated by the THC under the direction of Dr. James E. Bruseth. In the course of that excavation, two additional bronze cannons--nearly identical to the first--were uncovered in the bottom of the hull (Figure ~\ref{fig:FigExcavate}) \citep{RN5763,RN5762,RN5761}. The cannon selected for 3D scanning, and described herein, was one of two that were recovered \textit{in-situ}, found atop the ballast and beneath the cargo of the main hold. A fourth cannon was identified as having been a part of the La Belle cargo; however, it was previously removed by an unknown party, leaving behind only the impression of the cannon on the sea floor \citep{RN5763}. 
 
 \begin{figure}[ht]\centering
 \includegraphics[width=\linewidth]{FigExcavate2}
@@ -91,7 +91,7 @@ In 1997-1998 the remainder of the vessel was excavated by the THC under the dire
 \label{fig:FigExcavate}
 \end{figure}
 
-These two cannons recovered \textit{in-situ} were transported to the Conservation Research Laboratory at Texas A\&M University, then to Keith for analyses (Figure ~\ref{fig:FigConserve}). Both cannons were found to bear decorations nearly identical to the first, with minor variations typical of replicated molds based upon the master \citep[361]{RN5763}. Like the first cannon, which bore the inscription \textit{N\textsuperscript{o} 4 no 741}, these two were marked in the same location on the base ring with \textit{746 \# N\textsuperscript{o} 84} and \textit{744 \# N\textsuperscript{o} 85}, respectively (Figure ~\ref{fig:FigBASE}).
+The two cannons recovered \textit{in-situ} were transported to the Conservation Research Laboratory at Texas A\&M University, then to Keith for analyses (Figure ~\ref{fig:FigConserve}). Both were found to bear decorations nearly identical to the first, with minor variations typical of replicated molds based upon the master \citep[361]{RN5763}. Like the first cannon, which bore the inscription \textit{N\textsuperscript{o} 4 no 741}, these two were marked in the same location on the base ring with \textit{746 \# N\textsuperscript{o} 84} and \textit{744 \# N\textsuperscript{o} 85}, respectively (Figure ~\ref{fig:FigBASE}).
 
 \begin{figure}[ht]\centering
 \includegraphics[width=\linewidth]{FigConserve2}
@@ -145,7 +145,7 @@ The cannon (41MG86 - 11900-1) was scanned using a Creaform GoSCAN20 running VXEl
 
 \subsection*{Modeling the cannon}
 
-A custom patch network (Non-Uniform Rational B-Spline, or NURBS) was designed to capture the detail of the 3D mesh in a 3D surface model (Figure ~\ref{fig:FigPatch}). Three-dimensional contour curves were applied along high curvature areas of the 3D mesh that were used as the basis for the initial layout of the patch network. The initial iteration of the patch network enlisted an auto estimation of the number of patches necessary, which was subsequently refined through a series of comparisons between the 3D surface model and the 3D mesh in Geomagic Control X.
+A custom patch network (Non-Uniform Rational B-Spline, or NURBS) was designed to capture the detail of the mesh in a surface model (Figure ~\ref{fig:FigPatch}). Three-dimensional contour curves were applied along high curvature areas of the mesh that were used as the basis for the initial layout of the patch network. The initial iteration of the patch network enlisted an auto estimation of the number of patches necessary, which was subsequently refined through a series of comparisons between the surface model and the mesh in Geomagic Control X.
 
 \begin{figure}[ht]\centering
 \includegraphics[width=\linewidth]{FigLSC3}
@@ -155,7 +155,7 @@ A custom patch network (Non-Uniform Rational B-Spline, or NURBS) was designed to
 
 \subsection*{Computer aided inspection and surface model refinement}
 
-Following design and layout of the initial patch network, each of the iteration was exported to Geomagic Control X to identify areas of the design that exceeded the specified tolerance and required revision (see Figure ~\ref{fig:Fig4}). Development of the final 3D surface model was an iterative process that resulted in a total of five revisions to the initial design of the patch network, yielding a freeform 3D surface model that meets with the tolerance (0.1 mm) specified for this project. 
+Following design and layout of the initial patch network, each of the iteration was exported to Geomagic Control X to identify areas of the design that exceeded the specified tolerance and required revision (see Figure ~\ref{fig:Fig4}). Development of the final surface model was an iterative process that resulted in a total of five revisions to the initial design of the patch network, yielding a freeform surface model that meets with the tolerance (0.1 mm) specified for this project. 
 
 \begin{figure}[ht]\centering
 \includegraphics[width=\linewidth]{FigCanDev}
@@ -167,7 +167,7 @@ Revisions to the patch network were conducted by shuffling patch groups, editing
 
 \section*{Results and Discussion}
 
-Our iterative approach to modeling one of the bronze cannons from the La Belle excavations resulted in an accurate 3D surface model of the cannon (Figure ~\ref{fig:Fig5}) that follows best practices, and complies with both the London Charter \citep{RN5872} and the Seville Principles \citep{RN5873}. The vent and bore of the cannon were sealed in the final surface model; however, those areas of the surface model can be removed, then extruded to render a parametric solid model prior to casting. The development of the 3D surface model greatly expedites that process, and provides an accurate model that is true to the original design, while also including specific, detailed attributes associated with its' wear, transport, and use-life.
+Our iterative approach to modeling one of the bronze cannons from the La Belle excavations resulted in an accurate surface model of the cannon (Figure ~\ref{fig:Fig5}) that follows best practices, and complies with both the London Charter \citep{RN5872} and the Seville Principles \citep{RN5873}. The vent and bore of the cannon were sealed in the final surface model; however, those areas of the surface model can be removed, then extruded to render a parametric solid model prior to casting. The development of the 3D surface model greatly expedites that process, and provides an accurate model that is true to the original design, while also including specific, detailed attributes associated with its' wear, transport, and use-life.
 
 \begin{figure}[ht]\centering
 \includegraphics[width=\linewidth]{FigSurfaceModel}
@@ -177,7 +177,7 @@ Our iterative approach to modeling one of the bronze cannons from the La Belle e
 
 \section*{Ancillary Observations}
 
-Three-dimensional prints of the cannon (and the handles, separately) have been generated, and were recently used in the recent Technology in Archaeology Academy in Fredericksburg, Texas, organized by the Texas Archeological Society. The 3D prints of the cannon handles were scanned at the Academy with the same scanner used to scan the cannon (Creaform GoSCAN20), then compared with the final surface model of the handle generated by this project using a 0.3 mm tolerance (Figure ~\ref{fig:Fig6}). This exercise made us curious regarding the variable 3D printing resins (and printers), and which would provide the most accurate model. While that topic is not explored here, it does seem that future comparative analyses of 3D printers and the various resins that they can use would benefit discussions of 3D printing and additive manufacturing in archaeology.
+Three-dimensional prints of the cannon (and the handles, separately) have been generated, and were recently used at the Technology in Archaeology Academy in Fredericksburg, Texas, organized by the Texas Archeological Society. The 3D prints of the cannon handles were scanned at the Academy with the same scanner used to scan the cannon (Creaform GoSCAN20), then compared with the final surface model of the handle generated by this project using a 0.3 mm tolerance (Figure ~\ref{fig:Fig6}). This exercise made us curious regarding the variable 3D printing resins (and printers), and which would provide the most accurate model. While that topic is not explored here, it does seem that future comparative analyses of 3D printers and the various resins that they can use would benefit discussions of 3D printing and additive manufacturing in archaeology.
 
 \begin{figure}[ht]\centering
 \includegraphics[width=\linewidth]{CannonCompare}
@@ -199,11 +199,11 @@ It is equally curious just how closely the single-use molds assumed to have been
 
 \section*{Conclusion}
 
-The 3D mesh and freeform 3D surface model generated by this project are useful in ways that reach well beyond the scope of the initial undertaking. The surface model was created using best practices, and resulted in the iterative development of a model that meets or exceeds the  specified 0.1 mm tolerance. While hopeful that the cannon will eventually be reproduced and displayed in the Musée National de la Marine in the Republic of France, there are a large number of ancillary analytical, educational, and interpretive pursuits that can leverage the surface model and the mesh in the coming years. 
+The mesh and freeform surface model generated by this project are useful in ways that reach well beyond the scope of the initial undertaking. The surface model was created in following with best practices, resulting in the iterative development of a model that meets or exceeds the specified 0.1 mm tolerance. While hopeful that the cannon will eventually be reproduced and displayed in the Musée National de la Marine in the Republic of France, there are a large number of ancillary analytical, educational, and interpretive pursuits that can leverage the surface model and the mesh in the interim.
 
 \section*{Acknowledgments}
 
-We extend our gratitude to the Bullock Texas State History Museum for access, and the THC for the requisite permissions needed to scan the cannon. The cannon derives from the contents of \textit{La Belle}, all of which is the property of the Republic of France and from the collection of the Musée national de la Marine. The 3D figure of the final 3D mesh used to model the cannon appears courtesy of the THC. Our thanks to Kersten Bergstrom, Tad Britt, and Dr. Bernard K. Means for their thoughtful comments on an earlier draft.
+We extend our gratitude to the Bullock Texas State History Museum for access, and the THC for the requisite permissions needed to scan the cannon. The cannon derives from the contents of \textit{La Belle}, all of which is the property of the Republic of France and from the collection of the Musée national de la Marine. The 3D figure of the final 3D mesh used to model the cannon appears courtesy of the THC. Our thanks to Kersten Bergstrom, Tad Britt, and Bernard K. Means for their thoughtful comments on an earlier draft.
 
 \section*{References}
 
